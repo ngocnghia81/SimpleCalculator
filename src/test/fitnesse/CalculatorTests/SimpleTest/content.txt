@@ -1,3 +1,5 @@
+!3 Simple Test
+
 !define TEST_SYSTEM {slim}
 
 !path target/classes
@@ -6,5 +8,5 @@
 |com.example.fixtures|
 
 !|com.example.fixtures.CalculatorFixture|
-|setFirstNumber|setSecondNumber|add?|result?|
+|first number|second number|add?|result?|
 |5|3|true|8|
