@@ -10,9 +10,12 @@ echo "Cloning repository..."
 git clone https://github.com/ngocnghia81/Fitnesse.git
 cd Fitnesse
 
+# Tạo thư mục fitnesse
+echo "Creating fitnesse directory..."
+mkdir -p ../../fitnesse
+
 # Copy file jar và users.db
 echo "Copying files..."
-mkdir -p ../../fitnesse
 cp fitnesse-standalone.jar ../../fitnesse/
 cp users.db ../../
 

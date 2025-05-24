@@ -16,7 +16,7 @@ if not exist fitnesse\fitnesse-standalone.jar (
         copy fitnesse-standalone.jar fitnesse\
     ) else (
         echo FitNesse JAR not found. Downloading...
-        call download-from-github.bat
+        call download-fitnesse.bat
     )
 )
 

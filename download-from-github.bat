@@ -10,6 +10,10 @@ echo Cloning repository...
 git clone https://github.com/ngocnghia81/Fitnesse.git
 cd Fitnesse
 
+rem Tạo thư mục fitnesse nếu chưa tồn tại
+echo Creating fitnesse directory...
+if not exist ..\..\fitnesse mkdir ..\..\fitnesse
+
 rem Copy file jar và users.db
 echo Copying files...
 copy fitnesse-standalone.jar ..\..\fitnesse\
