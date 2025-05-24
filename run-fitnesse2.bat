@@ -10,8 +10,14 @@ if not exist fitnesse mkdir fitnesse
 
 rem Kiểm tra xem file jar đã tồn tại chưa
 if not exist fitnesse\fitnesse-standalone.jar (
-    echo FitNesse JAR not found. Downloading...
-    call download-fitnesse.bat
+    echo FitNesse JAR not found in fitnesse folder, checking in root directory...
+    if exist fitnesse-standalone.jar (
+        echo Found fitnesse-standalone.jar in root directory, copying to fitnesse folder...
+        copy fitnesse-standalone.jar fitnesse\
+    ) else (
+        echo FitNesse JAR not found. Downloading...
+        call download-fitnesse.bat
+    )
 )
 
 rem Chạy FitNesse với classpath
