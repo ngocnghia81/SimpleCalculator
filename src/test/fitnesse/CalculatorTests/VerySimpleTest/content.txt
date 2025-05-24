@@ -2,7 +2,7 @@
 
 !define TEST_SYSTEM {slim}
 
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path target/classes
 
 !|import|
 |com.example.fixtures|
@@ -11,4 +11,4 @@
 |setFirstNumber|5|
 |setSecondNumber|3|
 |add|
-|check|result()|10| 
+|check|result()|8| 
