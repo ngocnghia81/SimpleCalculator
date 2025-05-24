@@ -1,0 +1,14 @@
+!3 Very Simple Test
+
+!define TEST_SYSTEM {slim}
+
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+!|import|
+|com.example.fixtures|
+
+!|script: com.example.fixtures.CalculatorFixture|
+|setFirstNumber|5|
+|setSecondNumber|3|
+|add|
+|check|result()|10| 

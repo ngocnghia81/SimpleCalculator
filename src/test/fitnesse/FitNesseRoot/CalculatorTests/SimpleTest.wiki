@@ -1,0 +1,8 @@
+!contents -R2 -g -p -f -h
+
+!|import|
+|com.example.fixtures|
+
+!|calculator fixture|
+|first number|second number|add?|result?|
+|5|3|true|10|

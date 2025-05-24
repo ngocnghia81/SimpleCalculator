@@ -1,0 +1,56 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# FitNesse files
+FitNesseRoot/ErrorLogs/
+FitNesseRoot/RecentChanges/
+FitNesseRoot/files/
+fitnesse/*.jar
+FitNesse*.zip
+
+# Loại trừ các thư mục con của FitNesse để tránh đường dẫn quá dài
+src/test/fitnesse/FitNesseRoot/FitNesse/
+src/test/fitnesse/FitNesseRoot/PageFooter/
+src/test/fitnesse/FitNesseRoot/PageHeader/
+src/test/fitnesse/FitNesseRoot/PlugIns/
+src/test/fitnesse/FitNesseRoot/TemplateLibrary/
+src/test/fitnesse/FitNesseRoot/files/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store 

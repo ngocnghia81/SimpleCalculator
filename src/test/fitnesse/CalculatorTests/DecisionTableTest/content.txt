@@ -1,0 +1,25 @@
+!3 Bảng Quyết Định Cho Máy Tính
+
+Sử dụng bảng quyết định (Decision Table) để kiểm tra nhiều trường hợp của Calculator.
+
+!|import|
+|com.example.fixtures|
+
+!3 Kiểm tra các trường hợp khác nhau với Decision Table
+
+!|Decision:Calculator Test|
+|first number|second number|operation|expected result|
+|10|5|add|17|
+|10|5|subtract|5|
+|10|5|multiply|50|
+|10|5|divide|2|
+|100|0|divide|error|
+|-5|-10|add|-13|
+|-5|-10|subtract|5|
+|-5|-10|multiply|50|
+|-30|6|divide|-5|
+
+!define TEST_SYSTEM {slim}
+
+!path target/classes
+!path target/dependencies/*.jar 

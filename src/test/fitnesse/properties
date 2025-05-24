@@ -1,0 +1,6 @@
+port=9123
+dir=.
+root=.
+command_pattern=java -cp %p %m
+test.runner=fitnesse.slim.SlimService
+slim.port=8085 

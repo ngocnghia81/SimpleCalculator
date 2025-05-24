@@ -1,0 +1,18 @@
+!3 Kiểm Tra Xử Lý Lỗi
+
+Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
+
+!define TEST_SYSTEM {slim}
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+|script|com.example.fixtures.DivideByZeroTest|
+|set a|10|
+|set b|0|
+|check|message|Lỗi: Cannot divide by zero|
+|check|exception|true|
+
+|script|com.example.fixtures.DivideByZeroTest|
+|set a|10|
+|set b|5|
+|check|message|Phép chia 10/5 = 2|
+|check|exception|false| 

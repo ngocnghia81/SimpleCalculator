@@ -1,0 +1,14 @@
+!3 Simple Test
+
+!define TEST_SYSTEM {slim}
+
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+|import|
+|com.example.fixtures|
+
+|script|SimpleFixture|
+|setA|5|
+|setB|3|
+|execute|
+|check|result|8| 

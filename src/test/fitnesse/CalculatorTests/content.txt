@@ -1,0 +1,5 @@
+!contents -R2 -g -p -f -h
+
+!3 Calculator Test Suite
+
+This is a test suite for testing the Calculator class using FitNesse. 

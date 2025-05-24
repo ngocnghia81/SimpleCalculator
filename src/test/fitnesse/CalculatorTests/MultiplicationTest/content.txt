@@ -1,0 +1,13 @@
+!3 Multiplication Test
+
+This test verifies that the Calculator can multiply two numbers correctly.
+
+!|import|
+|com.example.fixtures|
+
+!|calculator fixture|
+|first number|second number|multiply?|result?|result equals?|
+|5|3|true|15|true|
+|10|20|true|200|true|
+|0|0|true|0|true|
+|-5|5|true|-25|true| 

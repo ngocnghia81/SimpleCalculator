@@ -1,0 +1,18 @@
+!3 Division Test
+
+This test verifies that the Calculator can divide two numbers correctly.
+
+!define TEST_SYSTEM {slim}
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|6|
+|set second number|3|
+|divide|
+|check|result|2|
+
+!|script|com.example.fixtures.CalculatorFixture|
+|set first number|10|
+|set second number|2|
+|divide|
+|check|result|5| 

@@ -1,0 +1,8 @@
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+!3 Calculator Test Suite
+
+Đây là bộ test cho ứng dụng Calculator sử dụng FitNesse. 

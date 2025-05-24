@@ -1,0 +1,33 @@
+!3 Bài Kiểm Tra Với Scenario
+
+Sử dụng Scenario Table để tạo các kịch bản kiểm thử có thể tái sử dụng.
+
+!|import|
+|com.example.fixtures|
+
+!| scenario | Tính toán với | n1 | và | n2 | sử dụng phép | operation | kết quả là | expectedResult |
+|set first number | @n1 |
+|set second number | @n2 |
+|$currentOperation= | @operation |
+|$actualResult= | calc | @operation |
+|check | $actualResult | @expectedResult |
+
+!| script | calculator fixture |
+|$add= | add |
+|$sub= | subtract |
+|$mul= | multiply |
+|$div= | divide |
+
+|Tính toán với|10|và|5|sử dụng phép|$add|kết quả là|17|
+|Tính toán với|20|và|5|sử dụng phép|$sub|kết quả là|15|
+|Tính toán với|6|và|6|sử dụng phép|$mul|kết quả là|36|
+|Tính toán với|20|và|4|sử dụng phép|$div|kết quả là|5|
+
+!define TEST_SYSTEM {slim}
+
+!| script | calculator fixture |
+|given calculator|
+|when I set first number to|50|
+|and I set second number to|10|
+|and I add|
+|then result should be|62| 

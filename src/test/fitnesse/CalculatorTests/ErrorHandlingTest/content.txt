@@ -1,0 +1,27 @@
+!3 Kiểm Tra Xử Lý Lỗi
+
+Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
+
+!|import|
+|com.example.fixtures|
+
+!|script|calculator fixture|
+|set first number|10|
+|set second number|0|
+|note|Khi chia cho 0, sẽ có ngoại lệ ArithmeticException|
+|reject|divide|
+|note|Giá trị trước đó vẫn được giữ nguyên|
+|check|result|0|
+
+!|script|calculator fixture|
+|given calculator|
+|when I set first number to|100|
+|and I set second number to|0|
+|note|Kiểm tra phép chia với số 0|
+|ensure|reject|and I divide|
+
+!|table:DivideByZeroTest|
+|a|b|
+|10|0|
+|100|0|
+|0|0| 

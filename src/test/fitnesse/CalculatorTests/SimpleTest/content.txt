@@ -1,0 +1,10 @@
+!define TEST_SYSTEM {slim}
+
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+!|import|
+|com.example.fixtures|
+
+!|CalculatorFixture|
+|setFirstNumber|setSecondNumber|add?|result?|
+|5|3|true|10|

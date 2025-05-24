@@ -1,0 +1,8 @@
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+!path target/classes
+!path target/dependencies/*.jar
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+!3 Welcome to the Calculator FitNesse Test Suite 

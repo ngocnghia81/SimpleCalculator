@@ -1,2 +1,5 @@
+com\example\fixtures\CalculatorTest.class
+com\example\fixtures\DivideByZeroTest.class
+com\example\fixtures\CalculatorFixture.class
 com\example\AdvancedCalculator.class
 com\example\Calculator.class

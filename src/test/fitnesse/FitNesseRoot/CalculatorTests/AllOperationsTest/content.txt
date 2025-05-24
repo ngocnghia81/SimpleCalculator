@@ -1,0 +1,49 @@
+!3 Bài Kiểm Tra Tất Cả Các Phép Tính
+
+Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator trong một bảng.
+
+!define TEST_SYSTEM {slim}
+!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+
+!3 Phép Cộng
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|10|
+|set second number|5|
+|add|
+|check|result|17|
+
+!3 Phép Trừ
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|10|
+|set second number|5|
+|subtract|
+|check|result|5|
+
+!3 Phép Nhân
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|10|
+|set second number|5|
+|multiply|
+|check|result|50|
+
+!3 Phép Chia
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|10|
+|set second number|5|
+|divide|
+|check|result|2|
+
+!3 Kiểm tra kết hợp các phép tính
+|script|com.example.fixtures.CalculatorFixture|
+|set first number|100|
+|set second number|20|
+|add|
+|check|result|122|
+|set first number|result|
+|set second number|10|
+|multiply|
+|check|result|1220|
+|set first number|result|
+|set second number|4|
+|divide|
+|check|result|305| 
