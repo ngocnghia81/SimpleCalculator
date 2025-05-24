@@ -35,7 +35,7 @@ Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator
 !3 Kiểm tra kết hợp các phép tính
 Đây là một ví dụ về cách sử dụng nhiều phép tính trong một kịch bản kiểm thử:
 
-|script|com.example.fixtures.CalculatorFixture|
+!|script|com.example.fixtures.CalculatorFixture|
 |set first number|100|
 |set second number|20|
 |add|

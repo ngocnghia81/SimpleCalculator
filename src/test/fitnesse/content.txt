@@ -1,8 +1,31 @@
 !define TEST_SYSTEM {slim}
 
+# Path definitions - we use relative paths to ensure CI/CD compatibility
 !path target/classes
 !path fitnesse/fitnesse-standalone.jar
 
 !contents -R2 -g -p -f -h
 
-!3 Welcome to the Calculator FitNesse Test Suite 
+!3 Welcome to the Calculator FitNesse Test Suite
+
+This test suite demonstrates the use of FitNesse for testing a simple Calculator application.
+
+!4 Test Standards
+
+1. All test tables should use the !| syntax consistently
+2. Use "first number", "second number" naming convention for input fields 
+3. All paths should be relative (e.g., target/classes) rather than absolute paths
+4. Intentional test failures should be clearly documented with comments
+
+!4 Available Tests
+
+* SimpleTest - Basic test for Calculator addition
+* VerySimpleTest - Simplified test using script tables
+* AdditionTest - Tests for the add operation
+* SubtractionTest - Tests for the subtract operation
+* MultiplicationTest - Tests for the multiply operation
+* DivisionTest - Tests for the divide operation
+* ErrorHandlingTest - Tests for divide by zero error handling
+* ScenarioTest - Tests using scenario tables for reusability
+* DecisionTableTest - Tests using decision tables for multiple cases
+* AllOperationsTest - Comprehensive tests for all operations 

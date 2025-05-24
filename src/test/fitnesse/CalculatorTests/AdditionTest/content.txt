@@ -9,8 +9,9 @@ This test verifies that the Calculator can add two numbers correctly.
 |com.example.fixtures|
 
 !|com.example.fixtures.CalculatorFixture|
-|firstNumber|secondNumber|add?|result?|resultEquals?|
+|first number|second number|add?|result?|result equals?|
 |5|3|true|8|true|
 |10|20|true|30|true|
 |0|0|true|0|true|
-|-5|5|true|0|true| 
+|-5|5|true|0|true|
+|2147483647|1|true|-2147483648|true| # Test overflow case 
