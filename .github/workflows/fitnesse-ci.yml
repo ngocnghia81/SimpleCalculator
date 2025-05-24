@@ -44,7 +44,7 @@ jobs:
     
     - name: Run FitNesse Tests
       run: |
-        java -cp "fitnesse/fitnesse-standalone.jar:target/classes:target/dependencies/*" fitnesse.FitNesse -c "CalculatorTests?suite&format=junit" -d . -r src/test/fitnesse -p 9125 -o -f plugins.properties -b target/fitnesse-results/result.xml
+        java -jar fitnesse/fitnesse-standalone.jar -c "CalculatorTests?suite&format=junit" -d . -r src/test/fitnesse -p 9125 -o -f plugins.properties -b target/fitnesse-results/result.xml
     
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
