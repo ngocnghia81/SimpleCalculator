@@ -3,16 +3,16 @@
 This test verifies that the Calculator can add two numbers correctly.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
 
-|script|com.example.fixtures.CalculatorFixture|
+!|script|com.example.fixtures.CalculatorFixture|
 |set first number|5|
 |set second number|3|
 |add|
-|check|result|10|
+|check|result|8|
 
 !|script|com.example.fixtures.CalculatorFixture|
 |set first number|10|
 |set second number|20|
 |add|
-|check|result|32| 
+|check|result|30| 

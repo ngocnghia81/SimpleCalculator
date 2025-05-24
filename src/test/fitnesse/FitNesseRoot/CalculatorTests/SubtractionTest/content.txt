@@ -3,9 +3,9 @@
 This test verifies that the Calculator can subtract two numbers correctly.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
 
-|script|com.example.fixtures.CalculatorFixture|
+!|script|com.example.fixtures.CalculatorFixture|
 |set first number|5|
 |set second number|3|
 |subtract|

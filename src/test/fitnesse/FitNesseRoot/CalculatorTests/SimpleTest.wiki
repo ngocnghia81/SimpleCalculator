@@ -1,8 +1,11 @@
 !contents -R2 -g -p -f -h
 
+!define TEST_SYSTEM {slim}
+!path ../../../../target/classes
+
 !|import|
 |com.example.fixtures|
 
-!|calculator fixture|
+!|com.example.fixtures.CalculatorFixture|
 |first number|second number|add?|result?|
-|5|3|true|10|
+|5|3|true|8|
