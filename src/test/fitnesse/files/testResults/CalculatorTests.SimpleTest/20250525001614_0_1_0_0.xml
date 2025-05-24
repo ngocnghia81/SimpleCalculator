@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20250223</FitNesseVersion>
+  <rootPath>CalculatorTests.SimpleTest</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2025-05-25T00:16:14+07:00</date>
+    <runTimeInMillis>16</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: target/classes&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.example.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;com.example.fixtures.CalculatorFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;setFirstNumber&lt;/td&gt;
+		&lt;td&gt;setSecondNumber&lt;/td&gt;
+		&lt;td&gt;add?&lt;/td&gt;
+		&lt;td&gt;result?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;5 &lt;span class="error"&gt;No Method setSetFirstNumber[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&amp;gt; void
+andIAdd() -&amp;gt; void
+andIDivide() -&amp;gt; void
+andIMultiply() -&amp;gt; void
+andISetSecondNumberTo(int) -&amp;gt; void
+andISubtract() -&amp;gt; void
+calc(java.lang.String) -&amp;gt; int
+divide() -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+firstNumber() -&amp;gt; int
+getClass() -&amp;gt; class java.lang.Class
+givenCalculator() -&amp;gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&amp;gt; int
+multiply() -&amp;gt; void
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+result() -&amp;gt; int
+resultEquals(int) -&amp;gt; boolean
+secondNumber() -&amp;gt; int
+setFirstNumber(int) -&amp;gt; void
+setSecondNumber(int) -&amp;gt; void
+subtract() -&amp;gt; void
+thenResultShouldBe(int) -&amp;gt; boolean
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+whenISetFirstNumberTo(int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3 &lt;span class="error"&gt;No Method setSetSecondNumber[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&amp;gt; void
+andIAdd() -&amp;gt; void
+andIDivide() -&amp;gt; void
+andIMultiply() -&amp;gt; void
+andISetSecondNumberTo(int) -&amp;gt; void
+andISubtract() -&amp;gt; void
+calc(java.lang.String) -&amp;gt; int
+divide() -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+firstNumber() -&amp;gt; int
+getClass() -&amp;gt; class java.lang.Class
+givenCalculator() -&amp;gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&amp;gt; int
+multiply() -&amp;gt; void
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+result() -&amp;gt; int
+resultEquals(int) -&amp;gt; boolean
+secondNumber() -&amp;gt; int
+setFirstNumber(int) -&amp;gt; void
+setSecondNumber(int) -&amp;gt; void
+subtract() -&amp;gt; void
+thenResultShouldBe(int) -&amp;gt; boolean
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+whenISetFirstNumberTo(int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;/__VOID__/&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;true&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;0&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;8&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SimpleTest</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.example.fixtures'}</instruction>
+        <slimResult>pass(com.example.fixtures)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>import_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ImportExpectation</type>
+          <evaluationMessage>com.example.fixtures</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='com.example.fixtures.CalculatorFixture', args=[]}</instruction>
+        <slimResult>pass(com.example.fixtures.CalculatorFixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>com.example.fixtures.CalculatorFixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setSetFirstNumber', args=[5]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_4</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>No Method setSetFirstNumber[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&gt; void
+andIAdd() -&gt; void
+andIDivide() -&gt; void
+andIMultiply() -&gt; void
+andISetSecondNumberTo(int) -&gt; void
+andISubtract() -&gt; void
+calc(java.lang.String) -&gt; int
+divide() -&gt; void
+equals(java.lang.Object) -&gt; boolean
+firstNumber() -&gt; int
+getClass() -&gt; class java.lang.Class
+givenCalculator() -&gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&gt; int
+multiply() -&gt; void
+notify() -&gt; void
+notifyAll() -&gt; void
+result() -&gt; int
+resultEquals(int) -&gt; boolean
+secondNumber() -&gt; int
+setFirstNumber(int) -&gt; void
+setSecondNumber(int) -&gt; void
+subtract() -&gt; void
+thenResultShouldBe(int) -&gt; boolean
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+whenISetFirstNumberTo(int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setSetSecondNumber', args=[3]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_5</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>No Method setSetSecondNumber[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&gt; void
+andIAdd() -&gt; void
+andIDivide() -&gt; void
+andIMultiply() -&gt; void
+andISetSecondNumberTo(int) -&gt; void
+andISubtract() -&gt; void
+calc(java.lang.String) -&gt; int
+divide() -&gt; void
+equals(java.lang.Object) -&gt; boolean
+firstNumber() -&gt; int
+getClass() -&gt; class java.lang.Class
+givenCalculator() -&gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&gt; int
+multiply() -&gt; void
+notify() -&gt; void
+notifyAll() -&gt; void
+result() -&gt; int
+resultEquals(int) -&gt; boolean
+secondNumber() -&gt; int
+setFirstNumber(int) -&gt; void
+setSecondNumber(int) -&gt; void
+subtract() -&gt; void
+thenResultShouldBe(int) -&gt; boolean
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+whenISetFirstNumberTo(int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='add', args=[]}</instruction>
+        <slimResult>fail(a=/__VOID__/;e=true)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_7</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>/__VOID__/</actual>
+          <expected>true</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='result', args=[]}</instruction>
+        <slimResult>fail(a=0;e=8)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_8</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>0</actual>
+          <expected>8</expected>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>16</totalRunTimeInMillis>
+</testResults>
+

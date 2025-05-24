@@ -9,25 +9,25 @@ Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator
 |com.example.fixtures|
 
 !3 Phép Cộng
-!|calculator fixture|
+!|com.example.fixtures.CalculatorFixture|
 |first number|second number|add?|result?|result equals?|
 |10|5|true|15|true|
 |100|50|true|150|true|
 
 !3 Phép Trừ
-!|calculator fixture|
+!|com.example.fixtures.CalculatorFixture|
 |first number|second number|subtract?|result?|result equals?|
 |10|5|true|5|true|
 |100|50|true|50|true|
 
 !3 Phép Nhân
-!|calculator fixture|
+!|com.example.fixtures.CalculatorFixture|
 |first number|second number|multiply?|result?|result equals?|
 |10|5|true|50|true|
 |100|50|true|5000|true|
 
 !3 Phép Chia
-!|calculator fixture|
+!|com.example.fixtures.CalculatorFixture|
 |first number|second number|divide?|result?|result equals?|
 |10|5|true|2|true|
 |100|50|true|2|true|
@@ -35,7 +35,7 @@ Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator
 !3 Kiểm tra kết hợp các phép tính
 Đây là một ví dụ về cách sử dụng nhiều phép tính trong một kịch bản kiểm thử:
 
-|script|calculator fixture|
+|script|com.example.fixtures.CalculatorFixture|
 |set first number|100|
 |set second number|20|
 |add|

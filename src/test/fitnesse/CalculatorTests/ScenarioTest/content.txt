@@ -15,7 +15,7 @@ Sử dụng Scenario Table để tạo các kịch bản kiểm thử có thể 
 |$actualResult= | calc | @operation |
 |check | $actualResult | @expectedResult |
 
-!| script | calculator fixture |
+!| script | com.example.fixtures.CalculatorFixture |
 |$add= | add |
 |$sub= | subtract |
 |$mul= | multiply |
@@ -26,7 +26,7 @@ Sử dụng Scenario Table để tạo các kịch bản kiểm thử có thể 
 |Tính toán với|6|và|6|sử dụng phép|$mul|kết quả là|36|
 |Tính toán với|20|và|4|sử dụng phép|$div|kết quả là|5|
 
-!| script | calculator fixture |
+!| script | com.example.fixtures.CalculatorFixture |
 |given calculator|
 |when I set first number to|50|
 |and I set second number to|10|

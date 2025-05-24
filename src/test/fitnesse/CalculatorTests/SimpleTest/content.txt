@@ -5,6 +5,6 @@
 !|import|
 |com.example.fixtures|
 
-!|CalculatorFixture|
+!|com.example.fixtures.CalculatorFixture|
 |setFirstNumber|setSecondNumber|add?|result?|
 |5|3|true|8|

@@ -10,8 +10,8 @@ Sử dụng bảng quyết định (Decision Table) để kiểm tra nhiều tr�
 
 !3 Kiểm tra các trường hợp khác nhau với Decision Table
 
-!|Decision:Calculator Test|
-|first number|second number|operation|expected result|
+!|CalculatorDecisionTest|
+|first number|second number|operation|expected result?|
 |10|5|add|15|
 |10|5|subtract|5|
 |10|5|multiply|50|

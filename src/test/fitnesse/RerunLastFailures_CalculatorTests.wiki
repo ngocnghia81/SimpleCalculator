@@ -5,11 +5,10 @@ Suite
 
 !note This page is automatically generated when running tests. It will be overwritten by the next Suite or Test execution.
 
-Tests failed (first failure was at 2025-05-25T00:09:47.147181):
+Tests failed (first failure was at 2025-05-25T00:16:13.653591700):
 
 !see [[CalculatorTests.AdditionTest][.CalculatorTests.AdditionTest]]
 !see [[CalculatorTests.AllOperationsTest][.CalculatorTests.AllOperationsTest]]
-!see [[CalculatorTests.DecisionTableTest][.CalculatorTests.DecisionTableTest]]
 !see [[CalculatorTests.DivisionTest][.CalculatorTests.DivisionTest]]
 !see [[CalculatorTests.ErrorHandlingTest][.CalculatorTests.ErrorHandlingTest]]
 !see [[CalculatorTests.MultiplicationTest][.CalculatorTests.MultiplicationTest]]
