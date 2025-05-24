@@ -2,14 +2,17 @@
 
 Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator trong một bảng.
 
+!define TEST_SYSTEM {slim}
+!path target/classes
+
 !|import|
 |com.example.fixtures|
 
 !3 Phép Cộng
 !|calculator fixture|
 |first number|second number|add?|result?|result equals?|
-|10|5|true|17|true|
-|100|50|true|152|true|
+|10|5|true|15|true|
+|100|50|true|150|true|
 
 !3 Phép Trừ
 !|calculator fixture|
@@ -36,12 +39,12 @@ Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator
 |set first number|100|
 |set second number|20|
 |add|
-|check|result|122|
+|check|result|120|
 |set first number|result|
 |set second number|10|
 |multiply|
-|check|result|1220|
+|check|result|1200|
 |set first number|result|
 |set second number|4|
 |divide|
-|check|result|305| 
+|check|result|300| 

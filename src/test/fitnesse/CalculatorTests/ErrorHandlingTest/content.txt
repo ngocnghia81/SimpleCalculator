@@ -2,6 +2,9 @@
 
 Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
 
+!define TEST_SYSTEM {slim}
+!path target/classes
+
 !|import|
 |com.example.fixtures|
 

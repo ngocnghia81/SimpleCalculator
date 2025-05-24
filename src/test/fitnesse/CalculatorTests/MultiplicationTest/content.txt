@@ -2,6 +2,9 @@
 
 This test verifies that the Calculator can multiply two numbers correctly.
 
+!define TEST_SYSTEM {slim}
+!path target/classes
+
 !|import|
 |com.example.fixtures|
 
