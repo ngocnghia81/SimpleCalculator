@@ -15,8 +15,8 @@ if not exist fitnesse\fitnesse-standalone.jar (
         echo Found fitnesse-standalone.jar in root directory, copying to fitnesse folder...
         copy fitnesse-standalone.jar fitnesse\
     ) else (
-        echo FitNesse JAR not found. Downloading...
-        call download-fitnesse.bat
+        echo FitNesse JAR not found. Downloading from ngocnghia81 repository...
+        call get-fitnesse-from-nghia.bat
     )
 )
 
