@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20250223</FitNesseVersion>
+  <rootPath>CalculatorTests.ErrorHandlingTest</rootPath>
+  <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2025-05-24T23:50:57+07:00</date>
+    <runTimeInMillis>43</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h3 id="0"&gt;Kiểm Tra Xử Lý Lỗi&lt;/h3&gt;
+&lt;br/&gt;Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.example.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;calculator fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set first number&lt;/td&gt;
+		&lt;td colspan="2"&gt;10&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;set second number&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;note&lt;/td&gt;
+		&lt;td colspan="2"&gt;Khi chia cho 0, sẽ có ngoại lệ ArithmeticException&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;&lt;table&gt;&lt;tr class="exception closed"&gt;&lt;td&gt; &lt;span class="error"&gt;reject&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td&gt;__EXCEPTION__:java.lang.ArithmeticException: Cannot divide by zero
+	at com.example.Calculator.divide(Calculator.java:51) [file:/D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes/]
+	at com.example.fixtures.CalculatorFixture.divide(CalculatorFixture.java:51) [file:/D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes/]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [n/a]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) [n/a]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [n/a]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) [rt.jar]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219.jar:20221219]&lt;/td&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;divide&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;note&lt;/td&gt;
+		&lt;td colspan="2"&gt;Giá trị trước đó vẫn được giữ nguyên&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;result&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;0&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;calculator fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td colspan="3"&gt;given calculator&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;when I set first number to&lt;/td&gt;
+		&lt;td colspan="2"&gt;100&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;and I set second number to&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;note&lt;/td&gt;
+		&lt;td colspan="2"&gt;Kiểm tra phép chia với số 0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;No Method reject[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&amp;gt; void
+andIAdd() -&amp;gt; void
+andIDivide() -&amp;gt; void
+andIMultiply() -&amp;gt; void
+andISetSecondNumberTo(int) -&amp;gt; void
+andISubtract() -&amp;gt; void
+calc(java.lang.String) -&amp;gt; int
+divide() -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+firstNumber() -&amp;gt; int
+getClass() -&amp;gt; class java.lang.Class
+givenCalculator() -&amp;gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&amp;gt; int
+multiply() -&amp;gt; void
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+result() -&amp;gt; int
+resultEquals(int) -&amp;gt; boolean
+secondNumber() -&amp;gt; int
+setFirstNumber(int) -&amp;gt; void
+setSecondNumber(int) -&amp;gt; void
+subtract() -&amp;gt; void
+thenResultShouldBe(int) -&amp;gt; boolean
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+whenISetFirstNumberTo(int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;and I divide&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;table:DivideByZeroTest &lt;span class="error"&gt;No Method doTable[1] in class com.example.fixtures.DivideByZeroTest.
+ Available methods:
+equals(java.lang.Object) -&amp;gt; boolean
+exception() -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+message() -&amp;gt; class java.lang.String
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setA(int) -&amp;gt; void
+setB(int) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;a&lt;/td&gt;
+		&lt;td&gt;b&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;100&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ErrorHandlingTest</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.example.fixtures'}</instruction>
+        <slimResult>pass(com.example.fixtures)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>import_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ImportExpectation</type>
+          <evaluationMessage>com.example.fixtures</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='CalculatorFixture', args=[]}</instruction>
+        <slimResult>pass(calculator fixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>calculator fixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='setFirstNumber', args=[10]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='setSecondNumber', args=[0]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_1_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='divide', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_1_3</instructionId>
+          <type>RejectActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='result', args=[]}</instruction>
+        <slimResult>pass(0)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_1_4</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>0</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='CalculatorFixture', args=[]}</instruction>
+        <slimResult>pass(calculator fixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>calculator fixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='givenCalculator', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='whenISetFirstNumberTo', args=[100]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='andISetSecondNumberTo', args=[0]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_4', instruction='call', instanceName='scriptTableActor', methodName='reject', args=[and I divide]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <type>EnsureActionExpectation</type>
+          <evaluationMessage>No Method reject[1] in class com.example.fixtures.CalculatorFixture.
+ Available methods:
+add() -&gt; void
+andIAdd() -&gt; void
+andIDivide() -&gt; void
+andIMultiply() -&gt; void
+andISetSecondNumberTo(int) -&gt; void
+andISubtract() -&gt; void
+calc(java.lang.String) -&gt; int
+divide() -&gt; void
+equals(java.lang.Object) -&gt; boolean
+firstNumber() -&gt; int
+getClass() -&gt; class java.lang.Class
+givenCalculator() -&gt; class com.example.fixtures.CalculatorFixture
+hashCode() -&gt; int
+multiply() -&gt; void
+notify() -&gt; void
+notifyAll() -&gt; void
+result() -&gt; int
+resultEquals(int) -&gt; boolean
+secondNumber() -&gt; int
+setFirstNumber(int) -&gt; void
+setSecondNumber(int) -&gt; void
+subtract() -&gt; void
+thenResultShouldBe(int) -&gt; boolean
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+whenISetFirstNumberTo(int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='tableTable_3_0', instruction='make', instanceName='tableTable_3', className='DivideByZeroTest', args=[]}</instruction>
+        <slimResult>pass(table:DivideByZeroTest)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>tableTable_3_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>table:DivideByZeroTest</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='tableTable_3_1', instruction='call', instanceName='tableTable_3', methodName='doTable', args=[[[a, b], [10, 0], [100, 0], [0, 0]]]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>tableTable_3_1</instructionId>
+          <type>TableTableExpectation</type>
+          <evaluationMessage>No Method doTable[1] in class com.example.fixtures.DivideByZeroTest.
+ Available methods:
+equals(java.lang.Object) -&gt; boolean
+exception() -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+message() -&gt; class java.lang.String
+notify() -&gt; void
+notifyAll() -&gt; void
+setA(int) -&gt; void
+setB(int) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>43</totalRunTimeInMillis>
+</testResults>
+
