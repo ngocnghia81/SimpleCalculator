@@ -23,20 +23,23 @@ jobs:
     - name: Build with Maven
       run: mvn clean compile
     
-    - name: Compile fixtures
+    - name: Create directories
       run: |
         mkdir -p target/classes
-        javac -d target/classes $(find src/main/java -name "*.java")
+        mkdir -p fitnesse
+        mkdir -p target/fitnesse-results
     
     - name: Download FitNesse
       run: |
-        mkdir -p fitnesse
         wget -O fitnesse/fitnesse-standalone.jar https://github.com/ngocnghia81/Fitnesse/raw/main/fitnesse-standalone.jar
+    
+    - name: Compile fixtures
+      run: |
+        javac -cp fitnesse/fitnesse-standalone.jar:target/classes -d target/classes $(find src/main/java -name "*.java")
     
     - name: Run FitNesse Tests
       run: |
-        mkdir -p target/fitnesse-results
-        java -jar fitnesse/fitnesse-standalone.jar -c "CalculatorTests?suite&format=junit" -d src/test/fitnesse -p 9125 -o target/fitnesse-results/result.xml
+        java -jar fitnesse/fitnesse-standalone.jar -c "CalculatorTests?suite&format=junit" -d . -r src/test/fitnesse -p 9125 -o -b target/fitnesse-results/result.xml
     
     - name: Upload Test Results
       uses: actions/upload-artifact@v4

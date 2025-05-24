@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 @FitNesseRunner.Suite("CalculatorTests")
 @FitNesseRunner.FitnesseDir("src/test/fitnesse")
 @FitNesseRunner.OutputDir("target/fitnesse-results")
-public class FitNesseRunner {
+public class CalculatorFitNesseRunner {
     // This class is a placeholder for the FitNesseRunner annotation.
 } 
