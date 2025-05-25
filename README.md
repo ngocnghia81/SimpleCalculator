@@ -48,7 +48,7 @@ Dự án này sử dụng GitHub Actions để tự động hóa quy trình CI/C
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/simple-calculator.git
+git clone https://github.com/ngocnghia81/SimpleCalculator
 cd simple-calculator
 
 # Build với Maven
