@@ -3,30 +3,21 @@
 Sử dụng bảng quyết định (Decision Table) để kiểm tra nhiều trường hợp của Calculator.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
+
+!|import|
+|com.example.fixtures|
 
 !3 Kiểm tra các trường hợp khác nhau với Decision Table
 
-|script|com.example.fixtures.CalculatorTest|
-|set first number|10|
-|set second number|5|
-|set operation|add|
-|check|expected result|17|
-
-|script|com.example.fixtures.CalculatorTest|
-|set first number|10|
-|set second number|5|
-|set operation|subtract|
-|check|expected result|5|
-
-|script|com.example.fixtures.CalculatorTest|
-|set first number|10|
-|set second number|5|
-|set operation|multiply|
-|check|expected result|50|
-
-|script|com.example.fixtures.CalculatorTest|
-|set first number|10|
-|set second number|5|
-|set operation|divide|
-|check|expected result|2| 
+!|CalculatorDecisionTest|
+|first number|second number|operation|expected result?|
+|10|5|add|15|
+|10|5|subtract|5|
+|10|5|multiply|50|
+|10|5|divide|2|
+|100|0|divide|error|
+|-5|-10|add|-15|
+|-5|-10|subtract|5|
+|-5|-10|multiply|50|
+|-30|6|divide|-5| 

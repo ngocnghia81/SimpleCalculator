@@ -21,6 +21,8 @@ FitNesseRoot/RecentChanges/
 FitNesseRoot/files/
 fitnesse/*.jar
 FitNesse*.zip
+src/test/fitnesse/files/testResults/
+src/test/fitnesse/RerunLastFailures_*.wiki
 
 # Loại trừ các thư mục con của FitNesse để tránh đường dẫn quá dài
 src/test/fitnesse/FitNesseRoot/FitNesse/

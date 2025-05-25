@@ -3,7 +3,7 @@
 Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
 
 |script|com.example.fixtures.DivideByZeroTest|
 |set a|10|

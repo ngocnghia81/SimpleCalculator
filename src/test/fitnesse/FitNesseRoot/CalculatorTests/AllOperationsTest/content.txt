@@ -3,7 +3,7 @@
 Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator trong một bảng.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
 
 !3 Phép Cộng
 |script|com.example.fixtures.CalculatorFixture|

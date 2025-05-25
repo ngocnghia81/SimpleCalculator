@@ -2,7 +2,7 @@
 
 !define TEST_SYSTEM {slim}
 
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../target/classes
 
 |script|com.example.fixtures.SimpleFixture|
 |setA|5|

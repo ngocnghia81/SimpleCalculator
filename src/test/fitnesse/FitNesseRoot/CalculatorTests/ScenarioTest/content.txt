@@ -3,7 +3,7 @@
 Sử dụng Scenario Table để tạo các kịch bản kiểm thử có thể tái sử dụng.
 
 !define TEST_SYSTEM {slim}
-!path D:/Documents/FitNesseFixtures/SimpleTestProject/target/classes
+!path ../../../../../target/classes
 
 |script|com.example.fixtures.CalculatorFixture|
 |given calculator|
