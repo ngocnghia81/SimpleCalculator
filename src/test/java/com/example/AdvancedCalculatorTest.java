@@ -104,6 +104,6 @@ public class AdvancedCalculatorTest {
         assertEquals("Basic add should work", 8, calculator.add(3, 5));
         assertEquals("Basic subtract should work", 7, calculator.subtract(10, 3));
         assertEquals("Basic multiply should work", 24, calculator.multiply(6, 4));
-        assertEquals("Basic divide should work", 3, calculator.divide(15, 5));
+        assertEquals("Basic divide should work", 3.0, calculator.divide(15, 5), 0.0001);
     }
 } 

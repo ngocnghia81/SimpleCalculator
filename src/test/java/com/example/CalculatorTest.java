@@ -45,13 +45,13 @@ public class CalculatorTest {
     
     @Test
     public void testDivide() {
-        assertEquals("6 / 3 should equal 2", 2, calculator.divide(6, 3));
-        assertEquals("0 / 5 should equal 0", 0, calculator.divide(0, 5));
-        assertEquals("-2 / 2 should equal -1", -1, calculator.divide(-2, 2));
-        assertEquals("-6 / (-3) should equal 2", 2, calculator.divide(-6, -3));
-        assertEquals("1 / 2 should equal 0 (integer division)", 0, calculator.divide(1, 2));
-        assertEquals("5 / 2 should equal 2 (integer division)", 2, calculator.divide(5, 2));
-        assertEquals("Large division should work", 1000, calculator.divide(1000000, 1000));
+        assertEquals("6 / 3 should equal 2", 2.0, calculator.divide(6, 3), 0.0001);
+        assertEquals("0 / 5 should equal 0", 0.0, calculator.divide(0, 5), 0.0001);
+        assertEquals("-2 / 2 should equal -1", -1.0, calculator.divide(-2, 2), 0.0001);
+        assertEquals("-6 / (-3) should equal 2", 2.0, calculator.divide(-6, -3), 0.0001);
+        assertEquals("1 / 2 should equal 0.5", 0.5, calculator.divide(1, 2), 0.0001);
+        assertEquals("5 / 2 should equal 2.5", 2.5, calculator.divide(5, 2), 0.0001);
+        assertEquals("Large division should work", 1000.0, calculator.divide(1000000, 1000), 0.0001);
     }
     
     @Test(expected = ArithmeticException.class)
