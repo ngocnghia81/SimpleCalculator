@@ -3,14 +3,16 @@
 Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator trong một bảng.
 
 !define TEST_SYSTEM {slim}
+!path target/classes
 !path ../../../../../target/classes
+!path ${FITNESSE_ROOTPATH}/target/classes
 
 !3 Phép Cộng
 |script|com.example.fixtures.CalculatorFixture|
 |set first number|10|
 |set second number|5|
 |add|
-|check|result|17|
+|check|result|15|
 
 !3 Phép Trừ
 |script|com.example.fixtures.CalculatorFixture|
@@ -31,19 +33,19 @@ Test này sẽ kiểm tra tất cả các phép tính cơ bản của Calculator
 |set first number|10|
 |set second number|5|
 |divide|
-|check|result|2|
+|check|decimal result|2.0|
 
 !3 Kiểm tra kết hợp các phép tính
 |script|com.example.fixtures.CalculatorFixture|
 |set first number|100|
 |set second number|20|
 |add|
-|check|result|122|
+|check|result|120|
 |set first number|result|
 |set second number|10|
 |multiply|
-|check|result|1220|
+|check|result|1200|
 |set first number|result|
 |set second number|4|
 |divide|
-|check|result|305| 
+|check|decimal result|300.0| 

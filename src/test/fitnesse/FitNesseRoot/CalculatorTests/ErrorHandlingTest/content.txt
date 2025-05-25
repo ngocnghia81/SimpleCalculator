@@ -3,7 +3,9 @@
 Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
 
 !define TEST_SYSTEM {slim}
+!path target/classes
 !path ../../../../../target/classes
+!path ${FITNESSE_ROOTPATH}/target/classes
 
 |script|com.example.fixtures.DivideByZeroTest|
 |set a|10|
@@ -14,5 +16,5 @@ Kiểm tra cách Calculator xử lý các trường hợp lỗi như chia cho 0.
 |script|com.example.fixtures.DivideByZeroTest|
 |set a|10|
 |set b|5|
-|check|message|Phép chia 10/5 = 2|
+|check|message|Phép chia 10/5 = 2.0|
 |check|exception|false| 

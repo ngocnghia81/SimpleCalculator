@@ -3,16 +3,18 @@
 This test verifies that the Calculator can divide two numbers correctly.
 
 !define TEST_SYSTEM {slim}
+!path target/classes
 !path ../../../../../target/classes
+!path ${FITNESSE_ROOTPATH}/target/classes
 
 |script|com.example.fixtures.CalculatorFixture|
 |set first number|6|
 |set second number|3|
 |divide|
-|check|result|2|
+|check|decimal result|2.0|
 
 !|script|com.example.fixtures.CalculatorFixture|
 |set first number|10|
 |set second number|2|
 |divide|
-|check|result|5| 
+|check|decimal result|5.0| 
