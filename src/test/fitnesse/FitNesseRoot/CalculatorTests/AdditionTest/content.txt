@@ -3,7 +3,9 @@
 This test verifies that the Calculator can add two numbers correctly.
 
 !define TEST_SYSTEM {slim}
+!path target/classes
 !path ../../../../../target/classes
+!path ${FITNESSE_ROOTPATH}/target/classes
 
 !|script|com.example.fixtures.CalculatorFixture|
 |set first number|5|
