@@ -43,13 +43,13 @@ public class Calculator {
      * 
      * @param a first number
      * @param b second number
-     * @return result of division
+     * @return result of division as double
      * @throws ArithmeticException if b is zero
      */
-    public int divide(int a, int b) {
+    public double divide(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Cannot divide by zero");
         }
-        return a / b;
+        return (double) a / b;
     }
 }

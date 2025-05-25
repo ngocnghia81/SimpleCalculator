@@ -21,7 +21,7 @@ public class DivideByZeroTest {
     
     public String message() {
         try {
-            int result = calculator.divide(a, b);
+            double result = calculator.divide(a, b);
             return "Phép chia " + a + "/" + b + " = " + result;
         } catch (ArithmeticException e) {
             return "Lỗi: " + e.getMessage();

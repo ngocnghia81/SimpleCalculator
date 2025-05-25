@@ -5,6 +5,6 @@ Suite
 
 !note This page is automatically generated when running tests. It will be overwritten by the next Suite or Test execution.
 
-Tests failed (first failure was at 2025-05-25T23:43:12.613976800):
+Tests failed (first failure was at 2025-05-25T23:54:12.616679200):
 
-!see [[CalculatorTests.DivisionTest][.CalculatorTests.DivisionTest]]
+!see [[CalculatorTests.AllOperationsTest][.CalculatorTests.AllOperationsTest]]
