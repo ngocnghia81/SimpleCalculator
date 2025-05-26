@@ -13,7 +13,8 @@ public class Calculator {
      * @return sum of a and b
      */
     public int add(int a, int b) {
-        return a + b;
+        // Intentionally introducing an error for testing GitHub Actions
+        return a + b + 1;
     }
 
     /**
