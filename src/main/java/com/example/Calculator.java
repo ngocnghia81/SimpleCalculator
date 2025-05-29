@@ -14,7 +14,7 @@ public class Calculator {
      */
     public int add(int a, int b) {
         // Fixed the intentional error
-        return a + b + 2;
+        return a + b;
     }
 
     /**
