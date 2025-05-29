@@ -1,0 +1,13 @@
+!3 Very Simple Test
+
+This is a very simple test for the Calculator.
+
+!define TEST_SYSTEM {slim}
+!path target/classes
+
+!|import|
+|com.example.fixtures|
+
+!|com.example.fixtures.SimpleFixture|
+|input|output?|
+|Hello|Hello World!| 

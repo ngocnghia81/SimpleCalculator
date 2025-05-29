@@ -1,0 +1,26 @@
+!3 Comprehensive Test Suite
+
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+
+!path target/classes
+
+!|import|
+|com.example.fixtures|
+
+!1 Comprehensive Calculator Test Suite
+
+This suite includes all calculator tests to provide complete test coverage.
+
+!include CalculatorTests.AdditionTest
+!include CalculatorTests.SubtractionTest
+!include CalculatorTests.MultiplicationTest
+!include CalculatorTests.DivisionTest
+!include CalculatorTests.ErrorHandlingTest
+!include CalculatorTests.AllOperationsTest
+!include CalculatorTests.DecisionTableTest
+!include CalculatorTests.ScenarioTest
+!include CalculatorTests.SimpleTest
+!include CalculatorTests.VerySimpleTest
+!include CalculatorTests.ScriptTest 

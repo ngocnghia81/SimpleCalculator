@@ -1,0 +1,16 @@
+!3 Script Test
+
+This test uses script table to test the Calculator.
+
+!define TEST_SYSTEM {slim}
+!path target/classes
+
+!|import|
+|com.example.fixtures|
+
+!|script|com.example.fixtures.CalculatorFixture|
+|given calculator|
+|when I set first number to|5|
+|and I set second number to|3|
+|and I add|
+|then result should be|8| 
